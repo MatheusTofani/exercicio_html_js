@@ -24,19 +24,20 @@ form input {
     margin-bottom: 5px;
     margin-top: 5px;
     height: 50px;
-    width: 200px;
+    width: 250px;
     text-align: center;
-    border-color:rgb(252, 252, 252);
-    background-color: rgb(252, 252, 252);
+    border: 2px solid #ccc;
+    background-color: rgb(241, 241, 241);
     border-radius: 40px;
     color: rgb(56, 56, 212);
+    box-shadow: none;
 
 }
 
 form button {
-    margin-top: 5px;
+    margin-top: 15px;
     height: 50px;
-    width: 200px;
+    width: 150px;
     background-color: rgb(56, 56, 212);
     border: none;
     color: white;
@@ -52,39 +53,48 @@ form input:focus {
 }
 
 form button:hover {
-    background-color: rgb(85, 85, 218);
+    background-color: rgb(150, 150, 228);
 }
 
 .cubo {
     width: 400px;
-    height: 400px;
+    height: 500px;
     background-color: white;
     text-align: center;
     align-items: center;
     border-radius: 30px;
 }
 
-form{
+form {
     margin-top: 80px;
 }
 
 h1 {
     font-size: 40px;
     margin-bottom: 20px;
-    color:rgb(4, 4, 109)
+    color: rgb(4, 4, 109)
 }
 
 .mensagem-errada {
-    background-color: red;
     display: none;
-    padding: 8px;
-    margin-bottom: 5px;
-    color:white;
+    font-size: 15px;
+    margin-bottom: 1px;
+    color: red;
 }
 
 .mensagem-certa {
-    padding: 8px;
-    background-color: #27ae60;
-    color: black;
+    color: #27ae60;
     display: none;
+    font-size: 15px;
+    height: 0px;
+    margin-bottom: 10px;
+}
+
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+img {
+    width: 150px;
+    padding-bottom: 50px;
 }
