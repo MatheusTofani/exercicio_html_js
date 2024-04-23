@@ -10,15 +10,19 @@
 
 <body>
     <div class="container">
-        <h1>Numeros EBAC</h1>
-        <form>
-            <input type="number" required placeholder="Primeiro numero" />
+        <div class="cubo">
+            <form id="formulario">
+                <h1>Numeros EBAC</h1>
             </br>
-            <input type="number" required placeholder="Segundo numero" />
-            </br>
-            <button type="submit"> Enviar </button>
-        </form>
-
+                <input id="numero-a" type="number" required placeholder="Primeiro numero" />
+                <p class="mensagem-errada"></p>
+                </br>
+                <input id="numero-b" type="number" required placeholder="Segundo numero" />
+                <p class="mensagem-certa"></p>
+                </br>
+                <button type="submit"> Enviar </button>
+            </form>
+        </div>
     </div>
     <script src="./main.js"></script>
 </body>

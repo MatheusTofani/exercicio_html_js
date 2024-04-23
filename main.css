@@ -6,12 +6,18 @@
 }
 
 body {
-    text-align: center;
+    margin: 0px;
 }
 
 .container {
-    width: 1366px;
-    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(56, 56, 212);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
 }
 
 form input {
@@ -20,9 +26,11 @@ form input {
     height: 50px;
     width: 200px;
     text-align: center;
-    border-color: rgb(187, 187, 235);
+    border-color:rgb(252, 252, 252);
+    background-color: rgb(252, 252, 252);
     border-radius: 40px;
-    color:rgb(56, 56, 212);
+    color: rgb(56, 56, 212);
+
 }
 
 form button {
@@ -30,12 +38,13 @@ form button {
     height: 50px;
     width: 200px;
     background-color: rgb(56, 56, 212);
-    border:none;
+    border: none;
     color: white;
     font-size: 20px;
     font-weight: bolder;
     cursor: pointer;
     border-radius: 40px;
+    box-shadow: none;
 }
 
 form input:focus {
@@ -44,4 +53,38 @@ form input:focus {
 
 form button:hover {
     background-color: rgb(85, 85, 218);
+}
+
+.cubo {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+form{
+    margin-top: 80px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:rgb(4, 4, 109)
+}
+
+.mensagem-errada {
+    background-color: red;
+    display: none;
+    padding: 8px;
+    margin-bottom: 5px;
+    color:white;
+}
+
+.mensagem-certa {
+    padding: 8px;
+    background-color: #27ae60;
+    color: black;
+    display: none;
 }
